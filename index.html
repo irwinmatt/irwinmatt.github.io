@@ -6,7 +6,14 @@
 -->
 <html>
 <style>
+.is-grouped {   
+    display: inline-block;
+    <!--background-color: yellow;-->
+}
 
+.is-grouped > .button:not(:last-child) {
+    margin-right: 10px;
+}
 </style>
 	<head>
 		<title>Matt Irwin</title>
@@ -42,8 +49,10 @@
 					</div>
 				</header>
 				<center style="background: white;">
+					<div class='is-grouped'>
 					<a href="#background" class="button scrolly" style="background: rgba(0,160,180,1);">About Me</a> 
 					<a href="#second" class="button scrolly" style="background: rgba(0,160,180,1);">Mods</a>
+					<div/>
 				</center>
 				<br/>
 				<br/>
@@ -54,7 +63,7 @@
 					<div class="row"> 
 					  <div class="4u 12u(narrow)"> 
 						<section> 
-						  <h3><img src="images/profile.jpg" alt="" style="width: 100%; height: 100%"/></h3> 
+						  <h3><img src="images/profile.jpg" alt="" style="max-width: 75%; height: auto; width: auto\9;"/></h3> 
 						  <p>My name is Matt Irwin. I am a junior in computer science at Purdue university. I have tracks in Software
 						  Engineering and Security. I also will be receiving a certification in Entrepreneurship upon my graduation date in Spring of 2019.</p> 
 						  <p>Most of my days are hunched over a computer but in my few moments of free time my hobbies include writing, singing, modding and lots of video games.</p> 
