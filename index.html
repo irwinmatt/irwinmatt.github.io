@@ -19,6 +19,15 @@ input {
 -moz-appearance: none;
 appearance: none;
 }
+
+.formButtonFront {
+  border:1px solid gray;
+  border-radius:7%;
+  font-size:0.875;
+  word-wrap: break-word;
+  width: 100px; // only for IE8
+  max-width: 100%;
+ }
 </style>
 	<head>
 		<title>Matt Irwin</title>
@@ -55,8 +64,8 @@ appearance: none;
 				</header>
 				<center style="background: white;">
 					<div class='is-grouped'>
-					<a href="#background" class="button scrolly" class="image fit" style="background: rgba(0,160,180,1);">About Me</a> 
-					<a href="#second" class="button scrolly" class="image fit" style="background: rgba(0,160,180,1);">Mods</a>
+					<a href="#background"  class="button scrolly" style="background: rgba(0,160,180,1); float: none; display: block; max-width: 100%;">About Me</a> 
+					<a href="#second" class="button scrolly" style="background: rgba(0,160,180,1);">Mods</a>
 					<div/>
 				</center>
 				<br/>
@@ -68,7 +77,7 @@ appearance: none;
 					<div class="row"> 
 					  <div class="4u 12u(narrow)"> 
 						<section> 
-						  <h3><img src="images/profile.jpg" alt="" style="max-width: 75%; height: auto; width: auto\9;"/></h3> 
+						  <span class="image featured"><img src="images/profile.jpg" alt="" /></span> 
 						  <p style="padding:0 15px 0 15px;">My name is Matt Irwin. I am a junior in computer science at Purdue university. I have tracks in Software
 						  Engineering and Security. I also will be receiving a certification in Entrepreneurship upon my graduation date in Spring of 2019.</p> 
 						  <p style="padding:0 15px 0 15px;">Most of my days are hunched over a computer but in my few moments of free time my hobbies include writing, singing, modding and lots of video games.</p> 
