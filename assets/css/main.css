@@ -2031,7 +2031,7 @@
 	#background {
 		position: relative;
 		margin: 0;
-		background-image: url("images/overlay.png"), url("../../images/background1.jpg");
+		background-image: url("images/overlay.png"), url("../../images/background1.png");
 		background-size: auto, cover;
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
