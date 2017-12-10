@@ -10,12 +10,16 @@
 .ghost-button {
   display: inline-block;
   width: 200px;
-  padding: 8px;
+  padding: 15px;
   color: black;
   border: 1px solid black;
+  border-radius: 5px;
   text-align: center;
   outline: none;
   text-decoration: none;
+  transition: background-color 0.1s ease-out,
+              color 0.1s ease-out,
+			  border 0.1s ease-out;
 }
 
 .ghost-button:hover,
@@ -23,6 +27,9 @@
   background-color: white;
   border: 1px solid grey;
   color: grey;
+   transition: background-color 0.15s ease-in,
+              color 0.15s ease-in,
+			  border 0.15s ease-in;
 }
 
 </style>
@@ -56,14 +63,22 @@
 			<section id="first" class="main"  style="background: white;">
 				<header>
 					<div class="container">
-						<h2>Table of Contents</h2>
+						<h2 style="color:black;">Table of Contents</h2>
 					</div>
 				</header>
 				<center>
+					<div style="padding: 10px; display:inline-block;">
 					<a href="#background" class="ghost-button big-btn">About Me</a> 
+					</div>
+					<div style="padding: 10px; display:inline-block;">
 					<a href="#second" class="ghost-button big-btn">Mods</a>
+					</div>
+					<div style="padding: 10px; display:inline-block;">
 					<a href="#background" class="ghost-button big-btn">About Me</a> 
+					</div>
+					<div style="padding: 10px; display:inline-block;">
 					<a href="#second" class="ghost-button big-btn">Mods</a>
+					</div>
 					<!--  class="button" style="background: rgba(0,160,180,1); float: none; display: inline-block; max-width: 100%;" -->
 				</center>
 				<br/>
