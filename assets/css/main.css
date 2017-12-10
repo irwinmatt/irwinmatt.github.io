@@ -2026,7 +2026,7 @@
 			padding-top: 1.5em;
 		}
 
-/* Background */
+/* Background 1 */
 
 	#background {
 		position: relative;
@@ -2059,7 +2059,40 @@
 			padding-top: 1.5em;
 		}
 
-		
+/* Background 2 */
+
+	#background2 {
+		position: relative;
+		margin: 0;
+		background-image: url("images/overlay.png"), url("../../images/background2.jpg");
+		background-size: auto, cover;
+		background-position: top left, center center;
+		background-repeat: repeat, no-repeat;
+		padding: 20em 0 20em 0;
+		text-align: center;
+		color: #fff;
+	}
+
+		#background2 header h1 {
+			font-size: 2.25em;
+			line-height: 1.25em;
+			margin-bottom: 0;
+		}
+
+		#background2 header p {
+			margin-top: 1.25em;
+			font-weight: 100;
+			padding: 0;
+			font-size: 1.25em;
+			line-height: 1.5em;
+			text-align: center;
+		}
+
+		#background2 footer {
+			padding-top: 1.5em;
+		}	
+
+	
 /* Main Sections */
 
 	.main {

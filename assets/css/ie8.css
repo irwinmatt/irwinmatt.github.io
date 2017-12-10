@@ -103,10 +103,20 @@
 		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
 
-/* Background */
+/* Background 1 */
 
 	#background {
 		background-image: url("../../images/background1.png");
+		background-size: cover;
+		background-position: auto;
+		background-repeat: no-repeat;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	}
+	
+/* Background 2 */
+
+	#background2 {
+		background-image: url("../../images/background2.jpg");
 		background-size: cover;
 		background-position: auto;
 		background-repeat: no-repeat;
