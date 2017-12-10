@@ -1511,7 +1511,7 @@
 		.image img {
 			display: block;
 			width: 100%;
-			border-radius: 0.5em;
+			
 		}
 
 		.image.featured {
@@ -2136,7 +2136,7 @@
 			}
 
 			.main > .content.style2 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #384955, #655361, #85505f);
+				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #00004d, #0000e6, #b3b3ff);
 			}
 
 			.main > .content.style3 {
