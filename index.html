@@ -100,7 +100,7 @@ window.onload = function(){
   tablinks[0].className += " active";
 };
 </script>
-	<div class="tab">
+	<div class="tab" onload="DisplayPage(event, 'THome')">
 		<button class="tablinks" onclick="DisplayPage(event, 'THome')">Home Page</button>
 		<button class="tablinks" onclick="DisplayPage(event, 'TAbout')">About Me</button>
 		<button class="tablinks" onclick="DisplayPage(event, 'TMods')">Mods</button>
@@ -132,28 +132,6 @@ window.onload = function(){
 			</section>
 	</body>	
 	</div>
-	
-		<!-- First
-			<section id="background2" class="main" style="padding:35vh 0 35vh 0; border-top:5px solid black; border-bottom: 5px solid black; border-width: thick;">
-				<center>
-					<div class="bigtext" style="color:black;">Table of Contents</div>
-				</center>
-				<center>
-					<div style="padding: 10px; display:inline-block;">
-					<a href="#info" class="ghost-button big-btn">About Me</a> 
-					</div>
-					<div style="padding: 10px; display:inline-block;">
-					<a href="#second" class="ghost-button big-btn">Mods</a>
-					</div>
-					<div style="padding: 10px; display:inline-block;">
-					<a href="#background" class="ghost-button big-btn">About Me</a> 
-					</div>
-					<div style="padding: 10px; display:inline-block;">
-					<a href="#second" class="ghost-button big-btn">Mods</a>
-					</div>
-				</center>
-			</section>
-		First -->
 	<div id="TAbout" class="tabcontent">
 		<body>
 			<section id="background" style="padding:0vh 0 15vh 0;" class="dark">
