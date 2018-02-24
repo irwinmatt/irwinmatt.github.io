@@ -85,6 +85,7 @@ var activetab = -1;
 
 function DisplayPage(evt, PageType, exclude) {
     var i, tabcontent, tablinks;
+	evt = evt || window.event;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -138,9 +139,9 @@ var ModsTimer = (function() {
 });
 </script>
 	<div class="tab">
-		<button id="btn_home" class="tablinks" onclick="DisplayPage(event, 'THome', -1)">Home Page</button>
-		<button id="btn_about" class="tablinks" onclick="DisplayPage(event, 'TAbout', -1)">About Me</button>
-		<button id="btn_mods" class="tablinks" onclick="DisplayPage(event, 'TMods', -1)">Mods</button>
+		<button id="btn_home" class="tablinks" onclick="DisplayPage(event, 'THome', -1); DisableTimer()">Home Page</button>
+		<button id="btn_about" class="tablinks" onclick="DisplayPage(event, 'TAbout', -1); DisableTimer()">About Me</button>
+		<button id="btn_mods" class="tablinks" onclick="DisplayPage(event, 'TMods', -1); DisableTimer()">Mods</button>
 	</div>
 	<div id="THome" class="tabcontent">
 	<head>
