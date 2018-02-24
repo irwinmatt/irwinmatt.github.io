@@ -138,9 +138,9 @@ function ModsTimer() {
 }
 </script>
 	<div class="tab">
-		<button id="btn_home" class="tablinks" onclick="DisplayPage(event, 'THome', -1); DisableTimer()">Home Page</button>
-		<button id="btn_about" class="tablinks" onclick="DisplayPage(event, 'TAbout', -1); DisableTimer()">About Me</button>
-		<button id="btn_mods" class="tablinks" onclick="DisplayPage(event, 'TMods', -1); DisableTimer()">Mods</button>
+		<button id="btn_home" class="tablinks" onclick="DisplayPage(event || window.event, 'THome', -1); DisableTimer()">Home Page</button>
+		<button id="btn_about" class="tablinks" onclick="DisplayPage(event || window.event, 'TAbout', -1); DisableTimer()">About Me</button>
+		<button id="btn_mods" class="tablinks" onclick="DisplayPage(event || window.event, 'TMods', -1); DisableTimer()">Mods</button>
 	</div>
 	<div id="THome" class="tabcontent">
 	<head>
