@@ -80,7 +80,10 @@
 </style>
 
 <script>
-function DisplayPage(evt, PageType) {
+var timerstopcheck = false;
+var activetab = -1;
+
+function DisplayPage(evt, PageType, exclude) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -88,22 +91,56 @@ function DisplayPage(evt, PageType) {
     }
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		if (i !== exclude) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
     }
     document.getElementById(PageType).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
-window.onload = function(){
-  DisplayPage(event, 'THome');
-  tablinks = document.getElementsByClassName("tablinks");
-  tablinks[0].className += " active";
+function DisableTimer() {
+	timerstopcheck = true;
+}
+
+function SetActive(i) {
+	var tablinks = document.getElementsByClassName("tablinks");
+	tablinks[i].className += " active";
+}
+
+window.onscroll = function() {
+	DisableTimer();
 };
+
+window.onload = function(){
+	HomeTimer();
+};
+
+var HomeTimer = (function() {
+	if (timerstopcheck === false) {
+		setTimeout(AboutMeTimer, 5000);
+		DisplayPage(event, 'THome', -1);
+	}
+});
+
+var AboutMeTimer = (function() {
+	if (timerstopcheck === false) {
+		setTimeout(ModsTimer, 5000);
+		DisplayPage(event, 'TAbout', -1);
+	}
+});
+
+var ModsTimer = (function() {
+	if (timerstopcheck === false) {
+		setTimeout(HomeTimer, 5000);
+		DisplayPage(event, 'TMods', -1);
+	}
+});
 </script>
 	<div class="tab">
-		<button class="tablinks" onclick="DisplayPage(event, 'THome')">Home Page</button>
-		<button class="tablinks" onclick="DisplayPage(event, 'TAbout')">About Me</button>
-		<button class="tablinks" onclick="DisplayPage(event, 'TMods')">Mods</button>
+		<button id="btn_home" class="tablinks" onclick="DisplayPage(event, 'THome', -1); DisableTimer()">Home Page</button>
+		<button id="btn_about" class="tablinks" onclick="DisplayPage(event, 'TAbout', -1); DisableTimer()">About Me</button>
+		<button id="btn_mods" class="tablinks" onclick="DisplayPage(event, 'TMods', -1); DisableTimer()">Mods</button>
 	</div>
 	<div id="THome" class="tabcontent">
 	<head>
@@ -591,6 +628,5 @@ window.onload = function(){
 <script src="assets/js/jquery.scrolly.min.js"></script>
 <script src="assets/js/skel.min.js"></script>
 <script src="assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="assets/js/main.js"></script>
 </html>
