@@ -83,9 +83,9 @@
 var timerstopcheck = false;
 var activetab = -1;
 
-function DisplayPage(evt, PageType, exclude) {
+function DisplayPage(event, PageType, exclude) {
     var i, tabcontent, tablinks;
-	evt = evt || window.event;
+	event = evt || window.event;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -97,7 +97,7 @@ function DisplayPage(evt, PageType, exclude) {
 		}
     }
     document.getElementById(PageType).style.display = "block";
-    evt.currentTarget.className += " active";
+    event.currentTarget.className += " active";
 }
 
 function DisableTimer() {
