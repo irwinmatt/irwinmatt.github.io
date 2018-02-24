@@ -85,7 +85,7 @@ var activetab = -1;
 
 function DisplayPage(event, PageType, exclude) {
     var i, tabcontent, tablinks;
-	event = evt || window.event;
+	event = event || window.event;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
