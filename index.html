@@ -81,7 +81,6 @@
 
 <script>
 var timerstopcheck = false;
-var activetab = -1;
 
 function DisplayPage(event, PageType, exclude) {
     var i, tabcontent, tablinks;
@@ -117,26 +116,26 @@ window.onload = function(){
 	HomeTimer();
 };
 
-var HomeTimer = (function() {
+function HomeTimer() {
 	if (timerstopcheck === false) {
 		setTimeout(AboutMeTimer, 5000);
-		DisplayPage(event, 'THome', -1);
+		DisplayPage(null, 'THome', -1);
 	}
-});
+}
 
-var AboutMeTimer = (function() {
+function AboutMeTimer() {
 	if (timerstopcheck === false) {
 		setTimeout(ModsTimer, 5000);
-		DisplayPage(event, 'TAbout', -1);
+		DisplayPage(null, 'TAbout', -1);
 	}
-});
+}
 
-var ModsTimer = (function() {
+function ModsTimer() {
 	if (timerstopcheck === false) {
 		setTimeout(HomeTimer, 5000);
-		DisplayPage(event, 'TMods', -1);
+		DisplayPage(null, 'TMods', -1);
 	}
-});
+}
 </script>
 	<div class="tab">
 		<button id="btn_home" class="tablinks" onclick="DisplayPage(event, 'THome', -1); DisableTimer()">Home Page</button>
