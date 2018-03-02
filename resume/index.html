@@ -48,6 +48,23 @@
         <script src="assets/js/main.js"></script>
 
     </head>
+	
+	<style>
+	@media print
+	{    	
+		.no-print, .no-print *
+		{
+			display: none !important;
+		}
+		
+		.space-print, .space-print *
+		{
+			display:inline; 
+			padding:0 0;
+			color:white;
+		}
+	}
+	</style>
 
     <body>
 
@@ -75,11 +92,13 @@
                             <header class="o-section__header  c-header__header  t-section__header">
                                 <div class="c-header__inner-header">
 
-                                    <div class="c-header__avatar">
+                                    <div class='no-print'>
+									<div class="c-header__avatar">
                                         <div class="a-header  c-avatar">
                                             <img class="c-avatar__img" src="assets/images/header/avatar.jpg" alt="">
                                         </div><!-- /c-avatar -->
                                     </div><!-- /c-header-avatar -->
+									<div>
 
                                 </div><!-- /c-header__inner-header -->
                             </header><!-- /o-section__header -->
@@ -111,26 +130,9 @@
 
                                         </div><!-- /c-header__brand -->
 
-                                        <!--<ul class="c-header__social-buttons  c-social-buttons">
-                                            <li class="a-header">
-                                                <a href="https://www.facebook.com/RuvenThemes/" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fa  fa-lg  fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="a-header">
-                                                <a href="https://dribbble.com/" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fa  fa-lg  fa-dribbble"></i>
-                                                </a>
-                                            </li>
-                                            <li class="a-header">
-                                                <a href="https://twitter.com/_Ruven" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fa  fa-lg  fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                        </ul>--><!-- /c-header__social-buttons -->
-
                                     </div><!-- /c-header__top -->
 
+									<div class='space-print'>
                                     <div class="c-header__contact">
 
                                         <hr class="a-header  c-header__contact-divider" />
@@ -149,7 +151,7 @@
 														</address>
                                                     </div>
                                                 </div><!-- /o-content -->
-                                            </div>
+                                            </div><br/>
 											
                                             <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                                 <div class="a-header  o-content">
@@ -164,7 +166,7 @@
 														</a>
                                                     </div>
                                                 </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
+                                            </div><!-- /o-grid__col --><br/>
 
                                             <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                                 <div class="a-header  o-content">
@@ -179,7 +181,7 @@
                                                         </a><!-- /o-link-container -->
                                                     </div>
                                                 </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
+                                            </div><!-- /o-grid__col --><br/>
 
                                             <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                                 <div class="a-header  o-content">
@@ -188,14 +190,14 @@
                                                             <h4>Email</h4>
                                                             <p>
                                                                 <span class="t-link-container__item--blended">
-                                                                    mattirwin089@gmail.com
+                                                                    mattirwin089@gmail.com 
                                                                 </span>
                                                             </p>
                                                         </a>
 														<a href="mailto:irwin2@purdue.edu" target="_blank" class="t-link-container">
                                                             <p>
                                                                 <span class="t-link-container__item--blended">
-                                                                    irwin2@purdue.edu
+                                                                    irwin2@purdue.edu 
                                                                 </span>
                                                             </p>
                                                         </a>
@@ -208,12 +210,13 @@
                                                         </a>
                                                     </div>
                                                 </div><!-- /o-content -->
-                                            </div><!-- /o-grid__col -->
+                                            </div><!-- /o-grid__col --><br/>
 
                                         </div><!-- /o-grid -->
 										
                                     </div><!-- /c-header__contact -->
-
+									</div><!-- /space-print -->
+									
                                 </div><!-- /c-header__inner-content -->
                             </div><!-- /o-section__content -->
 
@@ -258,7 +261,7 @@
 											My name is Matt Irwin. I am an incoming senior at Purdue University. I am studying Computer Science with a track in Software Engineering and a possible second track in Security. My primary language usage at Purdue has been in c and c++ and my work experience has primarily given me a focus in Delphi/Pascal. 
                                         </p>
                                         <p>
-											I also have taken up a certification in Entrepreneurship which has helped me learn to communicate and operate better in my group classes, as well as function to allow me some incite into the day to day business operations at my work. 
+											I also have taken up a certification in Entrepreneurship which has helped me learn to communicate and operate better in my group classes, as well as to give me some incite into the day to day business operations on the job. 
 										</p>
                                     </div>
                                 </div>
@@ -913,7 +916,8 @@
             <!-- ################################ -->
             <!-- ########### PROFILES ########### -->
             <!-- ################################ -->
-            
+			
+            <div class='no-print'>
             <section class="o-section  t-section  ">
 
                 <div class="o-section__header-bg  t-section__header"></div>
@@ -1018,15 +1022,15 @@
                 </div><!-- /o-container -->
 
             </section><!-- /o-section -->
+			</div>
 
             <!-- ################################ -->
             <!-- ############ FOOTER ############ -->
             <!-- ################################ -->
-            
+			
+            <div class='no-print'>
             <section class="o-section  t-section  o-section--footer">
 
-                <div class="o-section__header-bg  t-section__header"></div>
-                <div class="o-section__content-bg  t-section__content"></div>
 
                 <div class="o-container">
                     <div class="o-section__container">
@@ -1040,10 +1044,10 @@
                                                 <div class="o-content__body">
                                                     <h1 class="c-brand__title  t-title">
                                                         <span class="c-brand__sizer  c-brand__sizer--sm">
-                                                            <span class="a-footer  c-brand__first-word  t-title__first-word" style="display:inline-block">
+                                                            <span class="" style="display:inline-block">
                                                                 Matt
                                                             </span>
-                                                            <span class="a-footer  c-brand__second-word  t-title__second-word" style="display:inline-block">
+                                                            <span class="t-title__second-word" style="display:inline-block">
                                                                 Irwin
                                                             </span>
                                                         </span>
@@ -1060,6 +1064,7 @@
                 </div><!-- /o-container -->
 
             </section><!-- /o-section -->
+			</div>
 
 
 
