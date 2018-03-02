@@ -46,6 +46,10 @@
 
         <!-- Main JS -->
         <script src="assets/js/main.js"></script>
+		
+		<!-- Print Buttons -->
+		<link rel="stylesheet" href="../../stylesheets/coloringpage.css" type="text/css" media="screen, projection" />
+		<link rel="stylesheet" href="../../stylesheets/coloringpageprint.css" type="text/css" media="print" />
 
     </head>
 	
@@ -63,9 +67,28 @@
 			padding:0 0;
 			color:white;
 		}
+		
+		.overarching-print, .overarching-print *
+		{
+				
+		}
+	}
+	
+	.topcorner
+	{
+		position:fixed;
+		top:10px;
+		right: 20px;
+	}
+	
+	.fixed_alignment
+	{
+		padding: 0 0 0 0; 
+		display: block;
 	}
 	</style>
 
+	<div class="overarhing-print">
     <body>
 
         <div class="c-preloader  js-preloader">
@@ -74,18 +97,17 @@
 
         <div class="c-main-container  js-main-container">
 
-
-
             <!-- ################################ -->
             <!-- ############ HEADER ############ -->
             <!-- ################################ -->
             
             <section class="o-section o-section--header  t-section  t-section--header">
+				
                 <div class="c-header">
 
                     <div class="o-section__header-bg  t-section__header"></div>
-                    <div class="o-section__content-bg  t-section__content"></div>
-
+                    <div class="o-section__content-bg  t-section__content"></div>		
+							
                     <div class="o-container">
                         <div class="o-section__container">
 
@@ -104,8 +126,16 @@
                             </header><!-- /o-section__header -->
 
                             <div class="o-section__content  c-header__content  t-section__content">
+							
+								<div class='no-print topcorner'>
+								<a href="javascript:window.print()" target="_blank" class="t-link-container">
+									<div class="fixed_alignment">
+										<i class="fa  fa-lg  fa-print"></i>
+									</div>
+								</a><!-- /t-link-container -->
+								</div>
+							
                                 <div class="c-header__inner-content">
-
                                     <div class="c-header__top">
 
                                         <div class="c-header__brand">
@@ -460,7 +490,7 @@
 
                         <div class="o-section__content  t-section__content  ">
                             
-                            <div class="o-grid">
+                            <div class="o-grid" style="display: block;">
 
                                 <div class="o-grid__col-sm-6">
                                     <div class="o-media  o-media--block  o-content">
@@ -591,7 +621,7 @@
 
                         <div class="o-section__content  t-section__content  ">
                             
-                            <div class="o-grid">
+                            <div class="o-grid" style="display: block;">
 
                                 <div class="o-grid__col-sm-6">
                                     <div class="o-content">
@@ -822,7 +852,7 @@
 
                         <div class="o-section__content  t-section__content  ">
                             
-                            <div class="o-grid">
+                            <div class="o-grid" style="display: block;">
 
                                 <div class="o-grid__col-sm-6">
                                     <div class="o-media  o-media--block  o-content">
@@ -936,7 +966,7 @@
 
                         <div class="o-section__content  t-section__content  ">
                             
-                            <div class="o-grid">
+                            <div class="o-grid" style="display: block;">
 
                                 <div class="o-grid__col-xl-4  o-grid__col-sm-6">
                                     <div class="o-content">
@@ -1071,5 +1101,6 @@
         </div><!-- /c-main-container -->
 
     </body>
+	</div>
 
 </html>
