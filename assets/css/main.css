@@ -1845,7 +1845,8 @@
 		position: relative;
 		display: inline-block;
 		background: #0066ff;
-		padding: 0.25em 1em 0.25em 1em;
+		padding: 0.2em 1em 0.2em 1em;
+		font-size: 14pt;
 		/*border-radius: 0.25em;*/
 		cursor: pointer;
 		border: 0;
