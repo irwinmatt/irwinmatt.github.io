@@ -1844,14 +1844,19 @@
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #3d3d3d;
-		padding: 0.85em 3em 0.85em 3em;
-		border-radius: 0.25em;
+		background: #0066ff;
+		padding: 0.55em 1.5em 0.55em 1.5em;
+		/*border-radius: 0.25em;*/
 		cursor: pointer;
 		border: 0;
 		color: #fff;
 		text-align: center;
 		text-decoration: none;
+	}
+	
+	.button a:active{
+		background: #0099cc;
+		color: #fff;
 	}
 
 		input[type="button"]:hover,
@@ -1859,7 +1864,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #4f4f4f;
+			background: #0099cc;
 		}
 
 		input[type="button"].alt,
@@ -1993,7 +1998,7 @@
 			display: none;
 		}
 
-/* Header */
+/* Header - Index */
 
 	#header {
 		position: relative;
@@ -2026,7 +2031,7 @@
 			padding-top: 1.5em;
 		}
 
-/* Background 1 */
+/* Unused */
 
 	#background {
 		position: relative;
@@ -2059,7 +2064,7 @@
 			padding-top: 1.5em;
 		}
 
-/* Background 2 */
+/* AboutMe */
 
 	#background2 {
 		position: relative;
@@ -2092,6 +2097,38 @@
 			padding-top: 1.5em;
 		}	
 
+/* InstagramDown */
+
+	#InstagramDownBackground {
+		position: relative;
+		margin: 0;
+		background-image: url("images/overlay.png"), url("../../images/Zuckerberg.png");
+		background-size: auto, cover;
+		background-position: top left, center center;
+		background-repeat: repeat, no-repeat;
+		padding: 20em 0 20em 0;
+		text-align: center;
+		color: #fff;
+	}
+
+		#InstagramDownBackground header h1 {
+			font-size: 2.25em;
+			line-height: 1.25em;
+			margin-bottom: 0;
+		}
+
+		#InstagramDownBackground header p {
+			margin-top: 1.25em;
+			font-weight: 100;
+			padding: 0;
+			font-size: 1.25em;
+			line-height: 1.5em;
+			text-align: center;
+		}
+
+		#InstagramDownBackground footer {
+			padding-top: 1.5em;
+		}	
 	
 /* Main Sections */
 
